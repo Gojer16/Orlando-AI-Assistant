@@ -1,0 +1,38 @@
+{
+  "name": "Orlando Ascanio",
+  "title": "Software engineer & Entrepreneur",
+  "summary": "Entrepreneur and software engineer passionate about building meaningful, scalable, and innovative solutions. Experienced in full-stack development, AI integrations, and product design.",
+  "skills": {
+    "languages": ["JavaScript", "Python", "TypeScript", "SQL"],
+    "frameworks": ["React", "Next.js", "Express.js", "Flask", "FastAPI"],
+    "tools": ["Git", "Docker", "TailwindCSS", "LangChain"],
+    "other": ["Problem-solving", "Entrepreneurship", "System design"]
+  },
+  "projects": [
+    {
+      "name": "IKEA Kreativ MVP",
+      "description": "A 3D furniture placement app inspired by IKEA Kreativ, using Next.js and Three.js.",
+      "tech": ["Next.js", "Three.js", "Zustand", "TailwindCSS"],
+      "link": "https://github.com/yourgithub/ikea-mvp"
+    },
+    {
+      "name": "AI Resume Assistant",
+      "description": "An interactive resume website with an AI assistant that guides recruiters.",
+      "tech": ["Next.js", "Flask", "OpenAI API"],
+      "link": "https://github.com/yourgithub/ai-resume"
+    }
+  ],
+  "experience": [
+  ],
+  "education": {
+    "degree": "Bachelor in Computer Science",
+    "university": "IUTAR",
+    "year": "2025"
+  },
+  "values": [
+    "Growth through deliberate practice",
+    "Innovation with real-world impact",
+    "Clean, simple, and scalable code",
+    "Empowering others with technology"
+  ]
+}
