@@ -1,106 +1,64 @@
-📄 Resume Q&A Chatbot (Flask + Gemini API)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0deb9426-b930-40b0-a6b9-8c42376d2b48" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d7b5852e-97e0-49bc-ba84-b8b16e2df7d2" /># 📄 Resume Q&A Chatbot (Flask + Gemini API)
 
-This project is a resume-based AI chatbot powered by Google Gemini API.
+This project is a lightweight and production-ready AI chatbot that answers questions based on my resume. It is built with **Flask** and powered by the **Google Gemini API**. The app is designed with key features like rate limiting, streaming responses, and multiple system roles to provide a versatile and scalable solution.
 
-The app is designed to be lightweight, structured, and production-ready, with features such as rate limiting, streaming responses, and multiple system roles.
+---
+## ✨ Key Features
 
-🚀 Features
+* **RESTful API:** A single `/chat` endpoint for all interactions.
+* **Flexible Roles:** Switch between different system roles to get tailored responses:
+    * `recruiter`: Provides concise, resume-only answers.
+    * `career_coach`: Offers supportive and realistic career guidance.
+    * `detailed`: Gives thorough explanations with examples.
+* **Streaming & Non-Streaming:** Supports both JSON (non-streaming) and plain-text (streaming) responses.
+* **Built for Production:** Includes **CORS** support and **rate limiting** to prevent abuse.
+* **Easy Deployment:** Designed for minimal setup on platforms like **Render**.
 
-Flask API with a single /chat endpoint.
+---
 
-Google Gemini API for natural language understanding.
+### 🛠️ Tech Stack
 
-System roles for different interaction modes:
+* **Backend:** Flask (Python)
+* **LLM API:** Google Gemini
+* **Deployment:** Render
 
-recruiter: concise, resume-only answers.
+### ⚙️ Local Setup
 
-career_coach: supportive but realistic career guidance.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Gojer16/Orlando-AI-Assistant
+    cd Orlando-AI-Assistant
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Set your environment variable:**
+    ```bash
+    export GEMINI_API_KEY=your_api_key
+    ```
+4.  **Run the application:**
+    ```bash
+    flask run --host=0.0.0.0 --port=5000
+    ```
 
-detailed: thorough explanations with examples.
+---
 
-Multiple prompts for flexible use cases.
+### `POST /chat`
 
-Streaming & non-streaming responses:
+This endpoint processes user questions and returns an AI-generated answer.
 
-stream=false → returns a JSON object.
-
-stream=true → streams plain text chunks.
-
-CORS enabled for cross-origin requests.
-
-Rate limiting to prevent abuse.
-
-Deployable on Render with minimal setup.
-
-📡 API Usage
-Endpoint
-POST /chat
-
-Request Body (JSON)
+#### Request Body
+```json
 {
   "question": "What is Orlando's strongest skill?",
-  "role": "recruiter",    // recruiter | career_coach | detailed
-  "stream": false         // optional, default = false
+  "role": "recruiter",     // Optional, default = 'detailed'
+  "stream": false          // Optional, default = false
 }
+```
+### 🧭 Next Steps & Future Enhancements
+RAG (Retrieval-Augmented Generation): Add RAG to ground the model on longer documents, enabling it to answer questions on more than just a single resume.
 
-Response (non-streaming)
-{
-  "answer": "Orlando's strongest skill is building clean, scalable applications..."
-}
+LangChain Integration: Use LangChain for creating more structured pipelines and persistent memory, allowing for multi-turn conversations.
 
-Response (streaming)
-
-Plain text chunks are streamed progressively.
-
-🛠️ Tech Stack
-
-Backend: Flask (Python)
-
-LLM API: Google Gemini
-
-Infra: Render (deployment)
-
-Other:
-
-CORS
-
-Rate limiting
-
-
-⚙️ Setup
-
-Clone repo
-
-git clone https://github.com/your-username/resume-chatbot.git
-cd resume-chatbot
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Set environment variables
-
-export GEMINI_API_KEY=your_api_key
-
-
-Run locally
-
-flask run --host=0.0.0.0 --port=5000
-
-
-Deploy to Render
-
-Add GEMINI_API_KEY in Render’s environment settings.
-
-Use gunicorn "app:create_app()" as the start command.
-
-🧭 Next Steps
-
-Add RAG (Retrieval-Augmented Generation) for grounding on longer documents.
-
-Integrate LangChain for structured pipelines and memory.
-
-Expand roles with more advanced prompts.
-
+Expand Roles: Develop more advanced and specialized prompts for new system roles.
