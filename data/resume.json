@@ -1,38 +1,118 @@
 {
   "name": "Orlando Ascanio",
-  "title": "Software engineer & Entrepreneur",
-  "summary": "Entrepreneur and software engineer passionate about building meaningful, scalable, and innovative solutions. Experienced in full-stack development, AI integrations, and product design.",
-  "skills": {
-    "languages": ["JavaScript", "Python", "TypeScript", "SQL"],
-    "frameworks": ["React", "Next.js", "Express.js", "Flask", "FastAPI"],
-    "tools": ["Git", "Docker", "TailwindCSS", "LangChain"],
-    "other": ["Problem-solving", "Entrepreneurship", "System design"]
+  "title": "Full-Stack Software Engineer | Entrepreneur",
+  "contact": {
+    "email": "operation927@gmail.com",
+    "location": "Living in Venezuela but Openly for Remote Jobs",
+    "linkedin": "https://www.linkedin.com/in/orlando-ascanio-dev",
+    "github": "https://github.com/gojer16"
   },
-  "projects": [
+  "why": "I wake up every day to prove that relentless learning and grit can outmatch privilege, status, or luck. I build to break generational limits—so knowledge, freedom, and opportunity aren’t luxuries, but standards. My mission: to become the best man my bloodline has ever produced, while building tools that solve real problems and empower others.",
+  "how": "I learn by building. No vibe-coding—I break systems down, reflect, and refine until I own the skill. I focus on production-ready, scalable solutions, leveraging full-stack technologies and automation. My process is deliberate, high-pressure, and rooted in engineering thinking.",
+  "what": "I’m a Full-Stack Developer with backend strength. I build web apps, scalable APIs, SaaS platforms, and interactive MVPs using Node.js, FastAPI, React, Next.js, Docker, CI/CD, SQL/NoSQL. I’m open to freelance projects, startup collaborations, and roles where I can solve real-world challenges.",
+  "core_values": [
+    "Curiosity & Innovation",
+    "Honesty & Integrity",
+    "Perseverance & Grit",
+    "Simplicity & Clean Code",
+    "Collaboration & Empowerment"
+  ],
+  "unique_selling_proposition": {
+    "universal": "I combine innovation, simplicity, and quality to create impactful solutions. With a passion for continuous learning and collaboration, I’m dedicated to solving real-world problems and empowering others through technology.",
+    "employers": "I deliver scalable, business-impact solutions with innovation, simplicity, and reliability. Thriving in dynamic environments, I use creativity and problem-solving to drive results.",
+    "clients": "I specialize in custom web applications that are innovative, simple to use, and built to last. I partner closely with clients to create tailored solutions that deliver measurable results.",
+    "collaborators": "I bring fresh ideas, a growth mindset, and strong collaboration to every project. My focus is on innovation and shared success through impactful solutions.",
+    "peers": "I’m a lifelong learner who shares knowledge, contributes to open source, and supports peers through collaboration, curiosity, and empathy."
+  },
+  "skills": {
+    "languages_frameworks": ["JavaScript", "TypeScript", "Python", "React", "Node.js", "Next.js", "Zustand", "TailwindCSS"],
+    "tools_devops": ["Git/GitHub", "Docker", "CI/CD", "AWS", "GCP", "Vercel/Render"],
+    "core_knowledge": ["APIs & REST", "SQL/NoSQL", "Authentication & OAuth2", "Encryption", "Unit & Integration Testing", "Jest"],
+    "soft_skills": ["Leadership", "Communication", "Collaboration", "Agile/Scrum"],
+    "currently_exploring": ["GraphQL", "Kubernetes", "Microservices", "Nest.js", "AI Agents"]
+  },
+  "work_experience": [
     {
-      "name": "IKEA Kreativ MVP",
-      "description": "A 3D furniture placement app inspired by IKEA Kreativ, using Next.js and Three.js.",
-      "tech": ["Next.js", "Three.js", "Zustand", "TailwindCSS"],
-      "link": "https://github.com/yourgithub/ikea-mvp"
-    },
-    {
-      "name": "AI Resume Assistant",
-      "description": "An interactive resume website with an AI assistant that guides recruiters.",
-      "tech": ["Next.js", "Flask", "OpenAI API"],
-      "link": "https://github.com/yourgithub/ai-resume"
+      "title": "Software Engineer (Internship/Project Lead)",
+      "company": "Escuela Técnica Industrial Mariano Fernández Fortique",
+      "date": "Jan 2025 – Apr 2025",
+      "location": "Cagua, Venezuela",
+      "achievements": [
+        "Led development of the school’s first official website, serving 400+ students and staff.",
+        "Secured backend APIs with Node.js + MySQL, cutting unauthorized access by 15–30%.",
+        "Delivered a mobile-friendly React front-end, with 50%+ of traffic from phones."
+      ]
     }
   ],
-  "experience": [
+  "education": [
+    {
+      "school": "Instituto Universitario de Tecnología 'Antonio Ricaurte' (IUTAR)",
+      "degree": "Bachelor in Computer Science",
+      "date": "May 2025",
+      "location": "Cagua, Venezuela"
+    }
   ],
-  "education": {
-    "degree": "Bachelor in Computer Science",
-    "university": "IUTAR",
-    "year": "2025"
+  "projects": [
+    {
+      "name": "Librora (SaaS Book Management App)",
+      "tech": ["Node.js", "Express.js", "MongoDB", "Next.js", "Docker", "JWT", "Cloudinary"],
+      "achievements": [
+        "Built full-stack SaaS with authentication, role-based access, and advanced search.",
+        "Secured platform with Helmet, CORS, rate limiting, and Joi validation.",
+        "Integrated CI/CD, reducing deployment time by 75%."
+      ]
+    },
+    {
+      "name": "Freelance Storefront (Full-Stack E-Commerce App)",
+      "tech": ["Next.js", "MongoDB", "Zustand", "PayPal API", "Framer Motion"],
+      "achievements": [
+        "Built online storefront with account management, cart, and PayPal checkout.",
+        "Reduced in-person sales dependency by ~25% and enabled 10+ early transactions.",
+        "Saved the business owner ~5 hours per week by automating orders."
+      ]
+    },
+    {
+      "name": "Room Planner MVP (IKEA Kreativ Clone)",
+      "tech": ["Next.js", "Three.js", "Zustand", "TailwindCSS"],
+      "achievements": [
+        "Built 3D room planner MVP where users arrange furniture in virtual spaces.",
+        "Showcased affordable alternatives to commercial design tools."
+      ]
+    },
+    {
+      "name": "Realtime Chess App",
+      "tech": ["React", "Express.js", "Socket.io"],
+      "achievements": [
+        "Developed multiplayer chess with real-time move sync using WebSockets."
+      ]
+    },
+    {
+      "name": "Interactive Resume",
+      "tech": ["React", "TailwindCSS", "Framer Motion", "AI Assistant"],
+      "achievements": [
+        "Built an interactive portfolio with animated UI and integrated AI chatbot."
+      ]
+    },
+    {
+      "name": "MacOS Terminal UI Component",
+      "tech": ["React"],
+      "achievements": [
+        "Built a micro front-end component emulating a MacOS terminal with typewriter animation."
+      ]
+    }
+  ],
+  "ikigai": {
+    "love": ["Growth", "Mastery", "Connection", "Self-Discovery", "Creative Tech"],
+    "good_at": ["Problem-Solving", "System Design", "Focus", "Pattern Recognition", "Emotional Insight"],
+    "world_needs": ["Kindness", "Clarity", "Courage", "Empowering Systems"],
+    "paid_for": ["Tech Solutions", "Coaching", "Digital Products", "Productivity Teaching"],
+    "reason_to_wake_up": "To become the man I admire and to serve by creating tools, ideas, and systems that help others grow and feel alive."
   },
-  "values": [
-    "Growth through deliberate practice",
-    "Innovation with real-world impact",
-    "Clean, simple, and scalable code",
-    "Empowering others with technology"
+  "brand_palette": [
+    "#8e4585", "#e6e6fa", "#d8bfd8", "#e0b0ff",
+    "#0047ab", "#c8a2c8", "#9966cc", "#8a2be2",
+    "#dc143c", "#ffa07a", "#829191", "#949b96",
+    "#2c423f", "#00bfff", "#50c878", "#008080",
+    "#b2f2bb", "#228b22", "#8f438a"
   ]
 }
