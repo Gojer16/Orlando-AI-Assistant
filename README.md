@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0deb9426-b930-40b0-a6b9-8c42376d2b48" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d7b5852e-97e0-49bc-ba84-b8b16e2df7d2" /># 📄 Resume Q&A Chatbot (Flask + Gemini API)
+# 📄 Resume Q&A Chatbot (Flask + Gemini API)
 
 This project is a lightweight and production-ready AI chatbot that answers questions based on my resume. It is built with **Flask** and powered by the **Google Gemini API**. The app is designed with key features like rate limiting, streaming responses, and multiple system roles to provide a versatile and scalable solution.
 
