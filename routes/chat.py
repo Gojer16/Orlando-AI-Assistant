@@ -11,7 +11,8 @@ def chat():
     Body JSON:
       {
         "question": "What is Orlando's strongest skill?",
-        "stream": true | false    # default false
+        "stream": true | false,  # default false
+        "role": "recruiter"      # optional
       }
 
     Returns:
@@ -21,20 +22,22 @@ def chat():
     payload = request.get_json(silent=True) or {}
     question = payload.get("question") or payload.get("prompt") or ""
     stream_flag = bool(payload.get("stream", False))
+    role = payload.get("role", "recruiter")
 
     if not question:
         return jsonify({"error": "question is required"}), 400
 
-    if not stream_flag:
+    if stream_flag:
+        # Streaming response
+        def generator():
+            # Pass the role here!
+            yield from stream_gemini(question, role=role)
+
+        return Response(
+            stream_with_context(generator()),
+            content_type="text/plain; charset=utf-8"
+        )
+    else:
         # Non-streaming response
-        answer = ask_gemini(question)
+        answer = ask_gemini(question, role=role)
         return jsonify({"answer": answer})
-
-    # Streaming response
-    def generator():
-        yield from stream_gemini(question)
-
-    return Response(
-        stream_with_context(generator()),
-        content_type="text/plain; charset=utf-8"
-    )
