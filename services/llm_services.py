@@ -44,12 +44,16 @@ def _build_full_prompt(user_question: str, role: str) -> list[dict[str, str]]:
 
     return [
         {
-            "author": "system",
-            "content": [{"text": system_message}]
+            "role": "model",  
+            "parts": [        
+                {"text": system_message}
+            ]
         },
         {
-            "author": "user",
-            "content": [{"text": f"RESUME:\n{resume_text}\n\nQUESTION: {user_question}"}]
+            "role": "user",
+            "parts": [
+                {"text": f"RESUME:\n{resume_text}\n\nQUESTION: {user_question}"}
+            ]
         }
     ]
 
