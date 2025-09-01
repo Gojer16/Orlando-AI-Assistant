@@ -57,8 +57,8 @@ This endpoint processes user questions and returns an AI-generated answer.
 }
 ```
 ### 🧭 Next Steps & Future Enhancements
-RAG (Retrieval-Augmented Generation): Add RAG to ground the model on longer documents, enabling it to answer questions on more than just a single resume.
+1. RAG (Retrieval-Augmented Generation): Add RAG to ground the model on longer documents, enabling it to answer questions on more than just a single resume.
 
-LangChain Integration: Use LangChain for creating more structured pipelines and persistent memory, allowing for multi-turn conversations.
+2. LangChain Integration: Use LangChain for creating more structured pipelines and persistent memory, allowing for multi-turn conversations.
 
-Expand Roles: Develop more advanced and specialized prompts for new system roles.
+3. Expand Roles: Develop more advanced and specialized prompts for new system roles.
