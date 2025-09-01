@@ -11,7 +11,7 @@ def create_app():
     is a thin bootstrapper and routes live in routes/.
     """
     app = Flask(__name__)
-    CORS(app, origins=["https://react-basic-resume.vercel.app/"]) # URL
+    CORS(app, origins=["https://react-basic-resume.vercel.app"]) # URL
 
     limiter = Limiter(
         key_func=get_remote_address,   # identifies clients by IP
