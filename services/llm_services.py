@@ -43,10 +43,15 @@ def _build_full_prompt(user_question: str, role: str) -> list[dict[str, str]]:
     system_message = SYSTEM_ROLES.get(role, SYSTEM_ROLES["recruiter"])
 
     return [
-        {"role": "system", "content": system_message},
-        {"role": "user", "content": f"RESUME:\n{resume_text}\n\nQUESTION: {user_question}"}
+        {
+            "author": "system",
+            "content": [{"text": system_message}]
+        },
+        {
+            "author": "user",
+            "content": [{"text": f"RESUME:\n{resume_text}\n\nQUESTION: {user_question}"}]
+        }
     ]
-
 
 def ask_gemini(user_question: str, model_name: str = "gemini-2.5-flash-lite", role: str = "recruiter") -> str:
     """One-shot Gemini response (non-stream)."""
