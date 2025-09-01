@@ -63,12 +63,12 @@ def ask_gemini(user_question: str, model_name: str = "gemini-2.5-flash-lite", ro
     return "⚠️ Gemini couldn't generate a response."
 
 
-def stream_gemini(user_question: str, model_name: str = "gemini-2.5-flash-lite") -> Generator[str, None, None]:
+def stream_gemini(user_question: str, model_name: str = "gemini-2.5-flash-lite", role: str = "recruiter") -> Generator[str, None, None]:
     """
     Stream Gemini responses. 
     The SDK emits chunks; we iterate and yield text pieces.
     """
-    full_prompt = _build_full_prompt(user_question)
+    full_prompt = _build_full_prompt(user_question, role)
     model = genai.GenerativeModel(model_name)
 
     stream_iter = model.generate_content(full_prompt, stream=True)
