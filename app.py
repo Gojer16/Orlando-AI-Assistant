@@ -1,6 +1,6 @@
 from flask import Flask
 from routes.chat import chat_bp
-
+from flask_cors import CORS
 
 def create_app():
     """
@@ -9,7 +9,7 @@ def create_app():
     is a thin bootstrapper and routes live in routes/.
     """
     app = Flask(__name__)
-
+    CORS(app, origins=["http://localhost:5173"])
     app.register_blueprint(chat_bp) # attach chat API
 
     return app
